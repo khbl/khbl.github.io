@@ -55,64 +55,88 @@
     </nav>
 
 <div class="container-fluid">
-<!-- START SECTION 1 -->
+
+
+<!-- START SECTION 4 -->
 <div class="row">
-<div class="col-md-12 leadsection purple-bliss3" id="about">
+    <div class="col-md-12 section purple-bliss3" id="teaching">
+    
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
 
-<div class="col-md-1">
-</div>
-<div class="col-md-10">
-<!-- START SECTION 1 CONTENT -->
-<img src="./images/profile2-new.png" alt='Photo of myself' width='241' length='294' style="border-radius: 50%; float:left; margin-left:20px; margin-bottom:20px">
-<div style="clear:left">
-<h1>Hi, I'm Ben.</h1>
+    <!-- START SECTION 4 CONTENT -->
 
-<p><i class="fas fa-envelope" style="color: #002a5c;width:18px;height:18px;"></i> ben <i>[at]</i> mie <i>[dot]</i> utoronto <i>[dot]</i> ca</p>
+    <br />
 
-<p><i class="fas fa-building" style="color: #002a5c;width:18px;height:18px;"></i> Rosebrugh Building (RS), Room 308</p>
+    <h1>Teaching</h1>
+    
+    <h3>MIE566: Decision Making Under Uncertainty</h3> 
+    <p style="margin-bottom: 0em ;margin-top: 0em;"><i>formerly titled Decision Analysis</i></p>
+    <ul>
+      <li>Course Instructor, Fall 2020</li>
+      <li>Teaching Assistant, Fall 2018, Fall 2022</li>
+    </ul>
+    
+    <br />
 
-<p><a href="https://scholar.google.com/citations?user=hqn2lA4AAAAJ" style="text-decoration: none; color:black"><i class="fab fa-google" style="color: #002a5c;width:18px;height:18px;"></i> Google Scholar</a> | <a href="https://orcid.org/0000-0001-9972-3433" style="text-decoration: none; color:black"><i class="fab fa-orcid" style="color: #002a5c;width:18px;height:18px;"></i> ORCID</a> | <a href="https://www.linkedin.com/in/khbl" style="text-decoration: none; color:black"><i class="fab fa-linkedin" style="color: #002a5c;width:18px;height:18px;"></i> LinkedIn</a></p>
+    <h3>MIE363: Operations and Supply Chain Management</h3>
+    <p style="margin-bottom: 0em; margin-top: 0em;"><i>formerly titled Resource and Production Modeling</i></p>
+    <ul>
+      <li>Course Instructor, Winter 2019</li>
+      <li>Teaching Assistant, Winter 2018, Winter 2020, Winter 2021, Winter 2022, Winter 2023
+      <br />(Winner, MIE Outstanding Teaching Assistant Award, 2020)</li>
+    </ul>
+    
+    <br />
 
-<p>I'm a PhD candidate in the <a href="https://mie.utoronto.ca">Department of Mechanical and Industrial Engineering</a> at the <a href="https://www.utoronto.ca">University of Toronto</a> under the supervision of Professor <a href="https://chan.mie.utoronto.ca">Timothy C.Y. Chan</a>. I'm also an honourary clinical data analyst at the <a href="https://www.scottishambulance.com/">Scottish Ambulance Service</a>. My primary research interests are the application of optimization and data analytics methods in resuscitation science and pre-hospital medicine.</p>
+    <h3>MSC4001: Foundations of Resuscitation Science</h3>
+    <ul>
+      <li>Course Co-Instructor, 2021-2022</li>
+      <li>Teaching Assistant, 2019-2020</li>
+    </ul>
 
-<p>I previously completed my Master of Applied Science and Bachelor of Applied Science degrees at the University of Toronto. I was also a visiting postgraduate student at the University of Edinburgh.</p>
-</div>
-<!-- END SECTION 1 CONTENT -->
-</div>
-<div class="col-md-1">
-</div>
-
-
-</div><!--/md-12 -->
-</div><!--/row-->
-<!-- END SECTION 1 -->
-
+    <br />
+    
+    <h3>APS100: Orientation to Engineering</h3>
+    <ul>
+      <li>Teaching Assistant, Fall 2016</li>
+    </ul>
+    
+    
+    <!-- END SECTION 4 CONTENT -->
+    </div>
+    <div class="col-md-1">
+    </div>
+    </div><!--/md-12 -->
+    </div><!--/row-->
+    <!--END SECTION 4 -->
 
 <!-- FOOTER -->
 <div class="row">
-<div class="col-md-12 footer">
-Copyright K.H. Benjamin Leung | <a href="https://haydenryan.github.io/OnePagers-solid/">Template by Hayden Ryan</a>
-</div>
-</div>
-
-</div><!--/container final closing tag-->
-
+    <div class="col-md-12 footer">
+    Copyright K.H. Benjamin Leung | <a href="https://haydenryan.github.io/OnePagers-solid/">Template by Hayden Ryan</a>
+    </div>
+    </div>
+    
+</div><!--container-fluid final closing tag-->
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./js/bootstrap.min.js"></script>
     <script>
+    
+        $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > -1);
+      });
+    });
+    
+        $('body').scrollspy({ target: '#topnav' })
+    
+    </script>
 
-    $(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > -1);
-  });
-});
-
-    $('body').scrollspy({ target: '#topnav' })
-
-</script>
-
-  </body>
+</body>
 </html>
